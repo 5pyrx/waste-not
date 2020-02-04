@@ -5,16 +5,13 @@ const Counter = () => {
   return (
     <Consumer>
       { context => {
-        const totalPlayers = context.length;
-        const totalPoints = context.reduce( (total, player) => {
-          return total + player.score;
-        }, 0);
+        const totalFood = context.length;
         return (
           <table className="stats">
             <tbody>
               <tr>
                 <td>Food Items:</td>
-                <td>{totalPlayers}</td>
+                <td>{totalFood}</td>
               </tr>
             </tbody>
           </table>

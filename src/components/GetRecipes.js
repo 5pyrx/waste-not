@@ -3,10 +3,6 @@ import React, { Component } from 'react';
 class GetRecipes extends Component {
   render () {
     const {
-      name,
-      id,
-      score,
-      index,
       getRecipes
     } = this.props;
     return (

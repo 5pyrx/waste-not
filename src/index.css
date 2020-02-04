@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,8 +25,8 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
-  background-color: #8063FA;
-  border-bottom: solid 2px #D4CAFF;
+  background-color: #252D4E;
+  border-bottom: solid 2px #505671;
 }
 
 header h1 {
@@ -41,7 +40,7 @@ header h1 {
 
 form {
   display: flex;
-  background-color: #8063FA;
+  background-color: #252D4E;
 }
 
 input[type=text] {
@@ -50,7 +49,7 @@ input[type=text] {
   margin: 15px 10px 15px 15px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #5B45B9;
+  background-color: #9296a6;
   border-style: none;
   text-shadow: none;
   text-transform: uppercase;
@@ -73,7 +72,7 @@ input[type=submit] {
   font-size: .6em;
   margin: 15px 15px 15px 0;
   padding: 10px;
-  background-color: #44338D;
+  background-color: #9296a6;
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -101,12 +100,6 @@ svg {
   fill: #F0F0F0;
 }
 
-.is-high-score {
-  fill: #FFC657;
-  animation: grow 0.35s ease-in-out;
-  transform-origin: 50% 50%;
-}
-
 @keyframes grow {
   50% { transform: scale(1.4) rotate(-3deg); }
 }
@@ -120,9 +113,9 @@ svg {
   font-size: .8em;
   margin: 20px auto;
   padding: 10px;
-  background-color: #44338D;
+  background-color: #252D4E;
   border-radius: 5px;
-  border: none;
+  border: 5px solid #9296a6;
   color: #fff;
   letter-spacing: 2px;
   font-weight: bold;
@@ -136,7 +129,7 @@ svg {
 }
 
 .get-recipes:hover {
-    background: #D4CAFF;
+    background: #9296a6;
     color: black;
 }
 
@@ -144,43 +137,43 @@ svg {
   text-align: center;
 }
 
-.scoreboard {
+.kitchenpantry {
   background: #fff;
   width: 700px;
-  margin: 70px auto;
-  box-shadow: 0 2px 0 rgb(133, 104, 250);
+  margin: 50px auto;
+  box-shadow: 0 2px 0 #505671;
   border-radius: 6px;
   overflow: hidden;
 }
 
-.player {
+.food {
   display: flex;
   font-size: 1.2em;
   border-bottom: solid 2px #EEEEEE;
   letter-spacing: 2px;
 }
 
-  .player:last-of-type {
-    border-bottom-color: #D4CAFF;
+  .food:last-of-type {
+    border-bottom-color: #505671;
   }
 
-  .player-name:hover .remove-player {
+  .food-name:hover .remove-player {
     visibility: visible;
   }
 
-  .player-name,
-  .counter-score {
+  .food-name,
+  .counter-weight {
     color: #2F2366;
   }
 
-  .player-name {
+  .food-name {
     flex-grow: 1;
     font-size: 1.2em;
     line-height: 2.6em;
     padding-left: 10px;
   }
 
-  .remove-player {
+  .remove-food {
     font-size: 1.15em;
     border: none;
     outline: none;
@@ -192,14 +185,10 @@ svg {
     background: none;
   }
 
-.stats,
-.stopwatch {
-  width: 170px;
-}
-
 .stats {
   margin: 0 0 0 28px;
   font-weight: normal;
+  width: 170px;
 }
 
   .stats td:first-child {
@@ -213,52 +202,13 @@ svg {
   .stats td:last-child {
     text-align: left;
   }
-/*
-.stopwatch {
-  padding: 15px 10px 5px 10px;
-  margin: -5px -10px -5px 10px;
-  background: #5B45B9;
-}
 
-  .stopwatch-time {
-    display: block;
-    font-family: monospace;
-    font-size: 2.15em;
-  }
-
-  .stopwatch button {
-    margin: 8px 5px;
-    background-color: #44338D;
-    border-radius: 5px;
-    padding: 7px 8px;
-    border: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: bold;
-    text-shadow: none;
-    text-transform: uppercase;
-  }
-
-  .stopwatch button:hover,
-  input[type=submit]:hover {
-    background: #fff;
-    color: #44338D;
-    cursor: pointer;
-  }
-
-  .stopwatch h2 {
-    font-size: .6em;
-    margin: 0;
-    font-weight: normal;
-    letter-spacing: 2px;
-  } */
-
-.counter {
+.weight {
   display: flex;
   width: 190px;
 }
 
-  .counter-action {
+  .weight-action {
     border: none;
     font-size: 1.15em;
     font-weight: bold;
@@ -270,7 +220,7 @@ svg {
     outline: none;
   }
 
-  .counter-action:hover {
+  .weight-action:hover {
     color: #fff;
   }
 
@@ -282,7 +232,7 @@ svg {
     background: #EF5350;
   }
 
-  .counter-score {
+  .weight-amount {
     flex-grow: 1;
     text-align: center;
     font-family: monospace;

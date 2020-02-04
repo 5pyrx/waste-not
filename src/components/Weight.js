@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Weight = ({ index, score, changeWeight }) => {
+const Weight = ({ index, weight, changeWeight }) => {
 
   return (
-    <div className="counter">
-      <button className="counter-action decrement" onClick={() => changeWeight(index, -50)}> - </button>
-      <span className="counter-score">{ score + 'g' }</span>
-      <button className="counter-action increment" onClick={() => changeWeight(index, +50)}> + </button>
+    <div className="weight">
+      <button className="weight-action decrement" onClick={() => changeWeight(index, -10)}> - </button>
+      <span className="weight-amount">{ weight + 'g' }</span>
+      <button className="weight-action increment" onClick={() => changeWeight(index, +20)}> + </button>
     </div>
   );
 }
