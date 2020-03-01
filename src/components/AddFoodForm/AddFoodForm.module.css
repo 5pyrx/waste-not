@@ -1,0 +1,53 @@
+/* FORMS */
+
+.Form {
+  display: flex;
+  background-color: #252D4E;
+}
+
+.Form input[type=text] {
+  flex-grow: 1;
+  border-width: 0 0 1px 0;
+  margin: 15px 10px 15px 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #9296a6;
+  border-style: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  color: #C7BCF8;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+.Form input[type=text]::-webkit-input-placeholder{
+  color: #C7BCF8;
+  letter-spacing: 2px;
+}
+
+.Form input[type=text]:focus{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.Form input[type=submit] {
+  display: block;
+  font-size: .6em;
+  margin: 15px 15px 15px 0;
+  padding: 10px;
+  background-color: #9296a6;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.Form button,
+input[type=submit] {
+  outline: none;
+  transition: background-color 0.2s ease,
+              color 0.2s ease;
+}

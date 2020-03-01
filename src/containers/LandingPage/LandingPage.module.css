@@ -1,0 +1,33 @@
+.LandingPage {
+
+}
+
+.Intro {
+  width: 100%;
+  margin: 50px auto;
+  /* border: 3px solid black; */
+  padding: 60px 60px;
+  color: #252D4E;
+  /* box-shadow: 4px 4px 4px #C7BCF8;
+  border-radius: 10px; */
+  background-image: url('/zeroWaste.jpg');
+  background-size:contain;
+  background-position:top;
+  background: cover;
+  background-repeat: no-repeat;
+}
+
+p {
+  padding-top: 10px;
+}
+
+ul {
+  /* list-style-type: none; */
+  /* list-style-position:inside; */
+  padding-inline-start: 0px;
+}
+
+li {
+  padding-top: 10px;
+  color: inherit;
+}

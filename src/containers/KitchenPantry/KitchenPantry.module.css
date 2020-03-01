@@ -1,0 +1,39 @@
+.KitchenPantry {
+  background: #fff;
+  width: 700px;
+  margin: 50px auto;
+  box-shadow: 0 2px 0 #505671;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* ELEMENT STYLES -------------------- */
+
+body {
+  background: #e8e7e7;
+  font-family: arial;
+  text-transform: uppercase;
+}
+
+header {
+  color: #FFF;
+  padding: 5px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #252D4E;
+  border-bottom: solid 2px #505671;
+}
+
+header h1 {
+  flex-grow: 1;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.Spacer {
+  height: 100px;
+  display: block;
+  width: 100%;
+}

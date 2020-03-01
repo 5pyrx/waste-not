@@ -1,0 +1,51 @@
+.Food {
+  display: flex;
+  font-size: 1.2em;
+  border-bottom: solid 2px #EEEEEE;
+  letter-spacing: 2px;
+  align-items: center;
+}
+
+.Food:last-of-type {
+  border-bottom-color: #505671;
+}
+
+.FoodName:hover .RemoveFood {
+  visibility: visible;
+}
+
+.FoodName,
+.CounterWeight {
+  color: #2F2366;
+}
+
+.FoodName {
+  flex-grow: 1;
+  font-size: 1.2em;
+  line-height: 2.6em;
+  padding-left: 10px;
+}
+
+.RemoveFood {
+  font-size: 1.15em;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  color: #EF5350;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  padding: 0;
+  background: none;
+}
+
+.Food input {
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size:0.8rem;
+  display: flex;
+  width: 60%;
+  text-align: center;
+  border: 3px 3px #ccc;
+  border-radius: 3px;
+
+}

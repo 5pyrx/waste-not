@@ -1,0 +1,26 @@
+.GetRecipes {
+  min-width: 300px;
+  width: 50%;
+  display: block;
+  font-size: .8em;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #252D4E;
+  border-radius: 5px;
+  border: 5px solid #9296a6;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease,
+              color 0.2s ease;
+
+}
+
+.GetRecipes:hover {
+    background: #9296a6;
+    color: black;
+}
