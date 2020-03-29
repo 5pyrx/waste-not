@@ -14,7 +14,7 @@
 }
 
 .Logo {
-  margin: auto 40px;
+  margin: auto 30px;
   justify-content: flex-start;
   height: 50px;
   box-shadow: 0 0 5px #aaaaaa;
@@ -27,8 +27,9 @@ p {
 .NavigationItems {
   display: flex;
   justify-content: space-between;
-  margin-right: 50px;
-  width: 30%;
+  margin-right: 30px;
+  width: 50%;
+  padding-inline-start: 0;
 }
 
 .activePage {
@@ -44,16 +45,23 @@ li {
 a {
   color: #fff;
   text-decoration: none;
+  justify-content: space-between;
+  display: flex;
 }
 
-.Logout {
+.Login {
   padding: 10px;
   border-radius: 10px;
   border: 2px solid #C7BCF8;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 0.8rem;
 }
 
-.Logout:hover {
+.Login:hover {
   background-color: #ccc;
+}
+
+.AuthNavItems {
+
+
 }

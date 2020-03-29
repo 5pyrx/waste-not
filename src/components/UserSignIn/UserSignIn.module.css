@@ -1,0 +1,37 @@
+.UserSignIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SignInWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.UserSignIn h3 {
+  color: #252D4E;
+}
+
+.UserSignIn h5 {
+  margin-bottom: 10px;
+}
+
+.UserSignIn p {
+  margin: 10px 0;
+}
+
+.UserSignIn a {
+  color: #C7BCF8;
+}
+
+.GoogleButton {
+  width: 48%;
+  height: 40px;
+  color: white;
+  background-color: #252D4E;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Provider } from '../../Context';
+import { Provider } from '../../providers/index';
 
 import style from './KitchenPantry.module.css';
 
@@ -47,14 +47,6 @@ class KitchenPantry extends Component {
         weight: prevState.foodItems[index].weight += delta
     }));
   }
-
-  // handleRecipeResponse = (response) => {
-  //   this.setState(prevState => {
-  //       return {
-  //         myRecipes : response
-  //       };
-  //     });
-  //   }
 
   getRecipes = () => {
     let myFood = this.state.foodItems.map ( p => p.name); //creating an array of food names

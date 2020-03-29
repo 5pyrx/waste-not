@@ -9,7 +9,11 @@ const Weight = ({ index, weight, changeWeight }) => {
     <div className={style.Weight}>
       <button
         className={[style.WeightAction, style.Decrement].join(' ')}
-        onClick={() => changeWeight(index, -10)}> -
+        onClick={() => {if(weight === 0){
+          return null
+        }
+          else {changeWeight(index, -10)}}
+        }> -
       </button>
       <span className={style.WeightAmount}>{ weight + 'g' }</span>
       <button

@@ -1,0 +1,45 @@
+.FormWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 10px;
+  color: #252D4E;
+}
+
+.FormWrapper form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.FormWrapper input {
+  width: 100%;
+  margin: 15px 0;
+  padding: 5px 0;
+}
+
+.FormWrapper input:focus {
+  outline-color: #C7BCF8;
+}
+
+.FormButtons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.FormButtons button {
+  padding: 8px;
+  border-radius: 6px;
+  width: 40%;
+  border: 2px solid #C7BCF8;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #252D4E;
+}
+
+.FormButtons button:hover {
+  background-color: #C7BCF8;
+  border-color: #252D4E;
+}

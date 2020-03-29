@@ -4,16 +4,20 @@ import style from './LandingPage.module.css';
 
 const LandingPage = () => (
   <div className={style.LandingPage}>
-    <div className={style.Intro}>
-      <h1>Welcome to Waste Not!</h1>
-      <p>We want to help you reduce the amount of food you waste</p>
-      <p>and manage your food better</p>
-      <br />
-      <p>Waste Not will help you:</p>
-      <ul>
-        <li>always know the food in your kitchen</li>
-        <li>notify you before any food goes out of date</li>
-        <li>recommend meals that you can cook to use your food the most effectively</li>
+    <div className={style.TopImage}>
+      <div className={style.Intro}>
+        <h1>Welcome to Waste Not!</h1>
+        <p>We want to help you reduce the amount of food you waste</p>
+        <p>and manage your food better</p>
+      </div>
+    </div>
+
+    <div className={style.ListBanner}>
+      <h3>Waste Not will help you:</h3>
+      <ul className={style.ListWrapper}>
+        <li>Keep track of the food in your kitchen</li>
+        <li>Use your food before it goes out of date</li>
+        <li>Plan your meals to waste less</li>
       </ul>
     </div>
   </div>
