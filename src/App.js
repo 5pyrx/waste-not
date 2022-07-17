@@ -1,12 +1,12 @@
 import React from 'react';
 
 import Application from "./components/Application/Application";
-import UserProvider from "./providers/UserProvider";
+// import UserProvider from "./providers/UserProvider";
 
 const App = () => (
-  <UserProvider>
+  // <UserProvider>
     <Application />
-  </UserProvider>
+  // </UserProvider>
 );
 
 export default App;
